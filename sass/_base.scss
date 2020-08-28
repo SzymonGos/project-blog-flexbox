@@ -19,9 +19,9 @@ html {
     min-height: 100vh;
     //center website content
     margin: 0 auto;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         margin: 0 120px;
-        max-width: 923px;
+        max-width: 983px;
     }
 }
 
@@ -31,7 +31,7 @@ html {
     height: 60px;
     font-family: $special-font;
     padding: 20px 0 10px 16px;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         display: none;
     }
     &__list {
@@ -59,7 +59,7 @@ html {
     flex-basis: 100%;
     height: 70px;
     display: none;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -91,7 +91,7 @@ html {
     justify-content: center;
     padding: 0 5px;
     flex-grow: 1;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         display: none;
     }
     &__link {
@@ -114,7 +114,7 @@ html {
         align-self: center;
         display: block;
     }
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         display: none;
     }
 }
@@ -132,7 +132,7 @@ html {
     font-family: $special-font;
     justify-content: flex-end;
     padding: 25px 0;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         display: none;
     }
     &__list {
@@ -169,7 +169,7 @@ html {
             color: $links-hover-color;
         }
     }
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         display: none;
     }
 }
@@ -188,7 +188,7 @@ html {
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         flex-wrap: wrap;
     }
     .article {
@@ -201,18 +201,18 @@ html {
             padding-right: 0px;
             padding-left: 15px;
         }
-        @media (max-width: 1023px) {
+        @media (max-width: 1024px) {
             flex-basis: 100%;
             padding: 50px 0 50px 0;
         }
         &--hide {
-            @media (max-width: 1023px) {
+            @media (max-width: 1024px) {
                 display: none;
             }
         }
         &__image {
             filter: brightness(65%);
-            height: 40vh;
+            height: 350px;
         }
         &__title-box {
             position: absolute;
@@ -272,7 +272,7 @@ html {
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         flex-wrap: wrap;
     }
     .article {
@@ -282,7 +282,7 @@ html {
         align-items: center;
         justify-content: center;
         flex-basis: 31%;
-        @media (max-width: 1023px) {
+        @media (max-width: 1024px) {
             flex-basis: 48%;
             &:nth-last-child(1) {
                 flex-basis: 100%;
@@ -336,7 +336,7 @@ html {
 .article-list {
     display: flex;
     margin-bottom: 32px;
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         flex-flow: row wrap;
         .article-list--column {
             order: 1;
@@ -361,7 +361,7 @@ html {
             flex-basis: 100%;
             padding-top: 32px;
             padding-right: 16px;
-            @media (max-width: 1023px) {
+            @media (max-width: 1024px) {
                 padding: 16px 0;
             }
             &__img-wrapper {
