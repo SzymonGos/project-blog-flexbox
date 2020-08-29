@@ -23,6 +23,9 @@
             margin: 0 70px;
             max-width: 983px;
         }
+        @media (max-width: 768px) {
+            margin: 0 auto;
+        }
     }
     
     .header {
@@ -54,7 +57,7 @@
         }
     }
     
-    .header-medium {
+    .header-small {
         display: flex;
         flex-basis: 100%;
         height: 70px;
@@ -77,10 +80,21 @@
             height: auto;
             width: 180px;
             margin-top: 10px;
+            @media (max-width: 768px) {
+                width: 130px;
+            }
         }
         .search__btn {
             display: block;
             border: none;
+        }
+        @media (max-width: 768px) {
+            &__menu-bars {
+                margin-left: 10px;
+            }
+            .search__btn {
+                margin-right: 10px;
+            }
         }
     }
     
@@ -189,7 +203,6 @@
         flex-basis: 100%;
         justify-content: space-between;
         @media (max-width: 1024px) {
-            // flex-wrap: wrap;
             justify-content: center;
         }
         .article {
@@ -214,6 +227,9 @@
             &__image {
                 filter: brightness(65%);
                 height: 350px;
+                @media (max-width: 768px) {
+                    height: 300px;
+                }
             }
             &__title-box {
                 position: absolute;
@@ -349,8 +365,15 @@
                     order: 2;
                     flex-basis: 70%;
                     padding: 16px 0;
+                    @media (max-width: 1024px) {
+                        flex-basis: 100%;
+                        padding: 0;
+                    }
                 }
             }
+        }
+        @media (max-width: 1024px) {
+            flex-wrap: row wrap;
         }
         &--column {
             flex-basis: 70%;
@@ -418,6 +441,18 @@
                     }
                     &__category-link {
                         font-size: 1.2rem;
+                    }
+                }
+                @media (max-width: 768px) {
+                    flex-wrap: wrap;
+                    &__img-wrapper {
+                        flex-basis: 100%;
+                        order: 1;
+                    }
+                    &__text-box {
+                        flex-basis: 100%;
+                        padding: 10px 20px;
+                        order: 2;
                     }
                 }
             }
